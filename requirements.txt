@@ -1,0 +1,9 @@
+pydantic-settings
+sqlalchemy
+fastapi
+uvicorn
+psycopg2
+pydantic[email]
+pwdlib[bcrypt]
+pwdlib[argon2]
+PyJWT

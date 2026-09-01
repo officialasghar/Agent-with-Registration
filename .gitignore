@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets (CRITICAL)
+.env
+.env.*
+!.env.example
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# FastAPI / Testing / Coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
+
+# IDEs and Code Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
