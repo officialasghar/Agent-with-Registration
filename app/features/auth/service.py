@@ -30,7 +30,7 @@ def register_user(db: Session, user_data: UserRegister) -> User:
     return new_user
 
 
-###Login
+##Login
 def authenticate_user(db: Session, login_data: UserLogin) -> str:
     user = db.query(User).filter(User.username == login_data.username).first()
     password = security.verify_password(login_data.password, user.password_hash)
@@ -41,3 +41,4 @@ def authenticate_user(db: Session, login_data: UserLogin) -> str:
         )
 
     return security.create_access_token(data={"sub": str(user.id), "username": user.username})
+
